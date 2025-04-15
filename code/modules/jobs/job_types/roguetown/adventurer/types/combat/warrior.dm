@@ -206,10 +206,10 @@
 						/obj/item/reagent_containers/glass/alchemical/lucpot)
 
 		if("Flagellant")
-			to_chat(H, span_warning("You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment. You take the suffering of others upon yourself."))
+			to_chat(H, span_warning("You are a pacifistic warrior blessed with uncannily titanic constituion, dedicated to taking the burdens from others as a walking, pain-blinded dynamo of self-sacrifce. Be your purpose to grant Eora's unconditional love to all before you, a quest to take on a burden worthy of Psydon himself, or elsewise, you WILL destroy your body, and you won't complain one bit."))
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE) // real flagellants only sew OTHERS wounds
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
@@ -222,7 +222,6 @@
 			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_BLOODLOSS_IMMUNE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_NOFALLDAMAGE1, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_IGNORESLOWDOWN, TRAIT_GENERIC)
@@ -231,7 +230,7 @@
 			H.change_stat("constitution", 15)
 			H.change_stat("intelligence", -2)
 			H.change_stat("perception", -2)
-			H.change_stat("endurance", -2)
+			H.change_stat("endurance", 2) // ENDURE
 			H.change_stat("strength", -2)
 			
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
@@ -242,5 +241,5 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic
 			backl = /obj/item/storage/backpack/rogue/satchel   
-			belt = /obj/item/storage/belt/rogue/leather        
-			beltr = /obj/item/rogueweapon/whip                
+			belt = /obj/item/storage/belt/rogue/leather
+			mask = /obj/item/clothing/mask/rogue/facemask
