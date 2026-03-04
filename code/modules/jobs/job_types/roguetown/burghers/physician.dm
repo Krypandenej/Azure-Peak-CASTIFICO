@@ -50,6 +50,7 @@
 		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN, //to properly wield a caneblade
 		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_MASTER,
+		/datum/skill/labor/farming = SKILL_LEVEL_NOVICE, //get your wagies to do this for you, but the option is there if you REALLY need to mess up that fine suit
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
